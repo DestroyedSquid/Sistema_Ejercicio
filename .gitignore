@@ -1,0 +1,15 @@
+# Archivos compilados
+target/
+*.class
+
+# Archivos de IntelliJ IDEA
+.idea/
+*.iml
+
+# Base de datos local (para que no se sobrescriban los datos entre ustedes)
+*.db
+*.sqlite
+
+# Logs y SO
+*.log
+.DS_Store
