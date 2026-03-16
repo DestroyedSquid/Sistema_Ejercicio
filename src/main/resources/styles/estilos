@@ -1,0 +1,69 @@
+/* --- Lado Izquierdo (Café Fuerte) --- */
+.panel-animacion {
+    -fx-background-color: #734024;
+}
+
+/* --- Lado Derecho (Café Base) --- */
+.panel-controles {
+    -fx-background-color: #A87865;
+}
+
+/* --- Textos --- */
+.texto-titulo {
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+.texto-subtitulo {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 18px;
+    -fx-letter-spacing: 2px;
+}
+.texto-destacado {
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+}
+.texto-normal {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+/* --- Botones y Controles --- */
+.boton-info {
+    -fx-background-color: #245773; /* Azul Complementario */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 15px;
+    -fx-cursor: hand;
+}
+.boton-info:hover {
+    -fx-background-color: #3a7596;
+}
+
+.caja-input {
+    -fx-background-color: rgba(0, 0, 0, 0.15); /* Fondo semitransparente para resaltar el input */
+    -fx-background-radius: 10px;
+}
+
+.input-reps {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+}
+
+.boton-siguiente {
+    -fx-background-color: #247367; /* Verde Complementario */
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+.boton-siguiente:hover {
+    -fx-background-color: #319e8d;
+}
+.boton-siguiente:disabled {
+    -fx-background-color: #555555;
+    -fx-text-fill: #aaaaaa;
+}
