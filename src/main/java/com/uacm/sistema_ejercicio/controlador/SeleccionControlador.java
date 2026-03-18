@@ -47,6 +47,4 @@ public class SeleccionControlador {
         alerta.setContentText("Buscando rutina para: " + musculo + " (Nivel: " + nivel + ")");
         alerta.showAndWait();
     }
-    //estas pero que si rebotas de pendejo
-    
 }
