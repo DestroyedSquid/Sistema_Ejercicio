@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="CONTROLLER_NAME"
-            prefHeight="400.0" prefWidth="600.0">
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="900.0" styleClass="fondo-registro" stylesheets="@../styles/estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uacm.sistema_ejercicio.controlador.RegistroRapidoControlador">
+    <children>
 
-</AnchorPane>
+        <VBox alignment="CENTER" maxWidth="771.0" prefHeight="501.0" spacing="50.0" styleClass="panel-registro">
+            <children>
+
+                <GridPane alignment="CENTER" hgap="30.0" vgap="40.0">
+                    <children>
+                        <Label styleClass="label-registro-destacado" text="Usuario:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtNombre" prefHeight="40.0" prefWidth="250.0" promptText="Nombre" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                        <Label styleClass="label-registro-destacado" text="Fecha de nacimiento:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <DatePicker fx:id="dpFechaNacimiento" prefHeight="40.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                        <Label styleClass="label-registro-destacado" text="Contraseña:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                        <PasswordField fx:id="txtPassword" prefHeight="40.0" prefWidth="250.0" promptText="Contraseña" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    </children>
+                </GridPane>
+
+                <Button fx:id="btnAceptarRegistro" mnemonicParsing="false" onAction="#accionAceptarRegistro" prefHeight="50.0" prefWidth="200.0" styleClass="boton-registro" text="Aceptar" />
+            </children>
+            <padding>
+                <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+            </padding>
+        </VBox>
+
+    </children>
+</VBox>

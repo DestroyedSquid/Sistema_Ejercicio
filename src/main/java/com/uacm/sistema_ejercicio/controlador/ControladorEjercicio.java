@@ -47,7 +47,15 @@ public class ControladorEjercicio {
         String repsHechas = txtRepeticionesReales.getText();
         System.out.println("El usuario registró: " + repsHechas + " repeticiones. Guardando en BD...");
 
-        // Aquí irá la lógica para limpiar la pantalla y cargar el GIF del siguiente ejercicio.
+        // Aqui ira la lógica para limpiar la pantalla y cargar el GIF del siguiente ejercicio.
         txtRepeticionesReales.clear();
+    }
+    // Este método será llamado desde la Lista de Ejercicios ANTES de que el usuario vea esta ventana
+    public void recibirDatosDeSeleccion(String musculo, String nivel) {
+        System.out.println("Datos recibidos por inyección: " + musculo + " - " + nivel);
+
+        // Actualizamos la interfaz temporalmente hasta que conectemos SQLite
+        lblNombreEjercicio.setText("Rutina de " + musculo);
+        lblMeta.setText("Nivel: " + nivel);
     }
 }

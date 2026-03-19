@@ -1,14 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="CONTROLLER_NAME"
-            prefHeight="400.0" prefWidth="600.0">
+<HBox prefHeight="600.0" prefWidth="900.0" styleClass="fondo-inicio" stylesheets="@../styles/estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uacm.sistema_ejercicio.controlador.InicioControlador">
+    <children>
 
-</AnchorPane>
+        <VBox alignment="CENTER" prefWidth="200.0" styleClass="panel-lateral">
+            <children>
+                <Label styleClass="label-fitguide-lateral" text="FitGuide" />
+            </children>
+        </VBox>
+
+        <VBox alignment="CENTER" spacing="40.0" HBox.hgrow="ALWAYS">
+            <children>
+                <Label styleClass="label-bienvenida" text="¡Bienvenido al sistema FitGuide!" />
+
+                <VBox alignment="CENTER" maxWidth="450.0" spacing="30.0" styleClass="panel-login">
+                    <padding>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+                    </padding>
+                    <children>
+
+                        <GridPane alignment="CENTER" hgap="15.0" vgap="20.0">
+                            <children>
+                                <Label styleClass="label-input-login" text="Nombre:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                <TextField fx:id="txtNombre" promptText="Nombre Usuario" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                                <Label styleClass="label-input-login" text="Contraseña:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                <PasswordField fx:id="txtPassword" promptText="Contraseña Usuario" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            </children>
+                        </GridPane>
+
+                        <HBox alignment="CENTER" spacing="20.0">
+                            <children>
+                                <Button fx:id="btnIniciarSesion" mnemonicParsing="false" onAction="#accionIniciarSesion" styleClass="boton-registro" text="Iniciar Sesión" />
+                                <Button fx:id="btnRegistrarme" mnemonicParsing="false" onAction="#accionRegistrarme" styleClass="boton-registro" text="Registrarme" />
+                            </children>
+                        </HBox>
+
+                        <Label fx:id="lblMensaje" style="-fx-text-fill: #FAB17F; -fx-font-weight: bold; -fx-font-size: 14px;" />
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</HBox>

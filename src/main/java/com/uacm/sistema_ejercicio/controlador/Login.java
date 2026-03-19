@@ -26,7 +26,7 @@ public class Login {
             lblMensaje.setStyle("-fx-text-fill: #27ae60;"); // Verde éxito
 
             // ¡MAGIA DEL ROUTER AQUÍ! Navegamos a la siguiente pantalla:
-            Router.navegar(event, "/views/Seleccion.fxml", "Selección de Rutina");
+            Router.navegar(event, "/views/RegistroRapido.fxml", "Selección de Rutina");
 
         } else {
             lblMensaje.setText("Usuario o clave incorrectos.");

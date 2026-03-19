@@ -71,3 +71,140 @@
     -fx-background-color: #555555;
     -fx-text-fill: #aaaaaa;
 }
+/* --- Pantalla de Registro --- */
+.fondo-registro {
+    -fx-background-color: linear-gradient(to bottom right, #E4F2E7, #93BFB7);
+}
+
+.panel-registro {
+    -fx-background-color: linear-gradient(to bottom, #2D3E40, #387373);
+    -fx-background-radius: 20;
+}
+
+.label-registro {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+}
+
+.label-registro-destacado {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.boton-registro {
+    -fx-background-color: linear-gradient(to bottom, #387373, #2D3E40);
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-font-size: 21px;
+    -fx-cursor: hand;
+}
+.boton-registro:hover {
+    -fx-background-color: linear-gradient(to bottom, #4a9191, #3c5457);
+}
+/* --- Pantalla de Inicio (Login Nuevo) --- */
+.fondo-inicio {
+    -fx-background-color: linear-gradient(to bottom right, #E4F2E7, #93BFB7);
+}
+.panel-lateral {
+    -fx-background-color: linear-gradient(to bottom, #2D3E40, #387373);
+}
+.panel-login {
+    -fx-background-color: #387373;
+    -fx-background-radius: 15px;
+}
+.label-bienvenida {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2D3E40;
+}
+.label-fitguide-lateral {
+    -fx-font-size: 70px;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-rotate: -90;
+}
+.label-input-login {
+    -fx-background-color: #2D3E40;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 5px;
+}
+/* --- Pantalla de Niveles de Brazo --- */
+.fondo-claro {
+    -fx-background-color: #F4F7F6; /* Un gris muy claro para que resalten las tarjetas blancas */
+}
+
+.banner-teal {
+    -fx-background-color: #387373; /* El color de tu compañero */
+}
+
+.tarjeta-nivel {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 10, 0, 0, 5); /* Sombra elegante */
+}
+
+.titulo-tarjeta {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2D3E40;
+}
+
+.texto-tarjeta {
+    -fx-font-size: 14px;
+    -fx-text-fill: #666666;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+.boton-teal {
+    -fx-background-color: #387373;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+}
+.boton-teal:hover {
+    -fx-background-color: #4a9191;
+}
+/* --- Tarjetas de Entrenamiento (Fondo Difuminado) --- */
+.tarjeta-entrenamiento {
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 15, 0, 0, 8);
+}
+
+.overlay-tarjeta {
+    /* Una capa oscura semitransparente para que el texto sea legible sobre la foto */
+    -fx-background-color: rgba(45, 62, 64, 0.75);
+    -fx-background-radius: 15px;
+}
+
+.titulo-entrenamiento {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.texto-entrenamiento {
+    -fx-font-size: 15px;
+    -fx-text-fill: #e0e0e0;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+}
+
+.boton-entrenamiento {
+    -fx-background-color: #FAB17F; /* El naranja del diseño original */
+    -fx-text-fill: #2D3E40;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+}
+.boton-entrenamiento:hover {
+    -fx-background-color: #f89b5c;
+}
