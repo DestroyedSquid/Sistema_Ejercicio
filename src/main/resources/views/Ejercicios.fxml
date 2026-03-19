@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox prefHeight="600.0" prefWidth="800.0" stylesheets="@../styles/estilos" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uacm.sistema_ejercicio.controlador.ControladorEjercicio">
+<HBox prefHeight="600.0" prefWidth="800.0" stylesheets="@../styles/estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uacm.sistema_ejercicio.controlador.ControladorEjercicio">
     <children>
 
         <VBox alignment="CENTER" prefWidth="400.0" spacing="20.0" styleClass="panel-animacion" HBox.hgrow="ALWAYS">

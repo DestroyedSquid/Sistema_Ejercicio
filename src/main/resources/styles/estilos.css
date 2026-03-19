@@ -1,3 +1,7 @@
+/* --- Fondo Principal de la Aplicación --- */
+.root {
+    -fx-background-color: #A87865; /* El café base de tu paleta */
+}
 /* --- Lado Izquierdo (Café Fuerte) --- */
 .panel-animacion {
     -fx-background-color: #734024;

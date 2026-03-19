@@ -1,5 +1,7 @@
 package com.uacm.sistema_ejercicio.controlador;
 
+import com.uacm.sistema_ejercicio.util.Router;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -34,17 +36,15 @@ public class SeleccionControlador {
     }
 
     // Acción del botón principal
+    // Este evento debe recibir el ActionEvent para saber qué ventana cerrar
     @FXML
-    public void iniciarEntrenamiento() {
+    public void iniciarEntrenamiento(ActionEvent event) {
         String musculo = comboMusculo.getValue();
         String nivel = comboNivel.getValue();
 
-        // Aquí es donde en el futuro cambiaremos a la pantalla del Ejercicio.
-        // Por ahora, lanzamos un popup para que el profe vea que la lógica funciona.
-        Alert alerta = new Alert(Alert.AlertType.INFORMATION);
-        alerta.setTitle("Simulación de Sistema");
-        alerta.setHeaderText("¡Entrenamiento Generado!");
-        alerta.setContentText("Buscando rutina para: " + musculo + " (Nivel: " + nivel + ")");
-        alerta.showAndWait();
+        System.out.println("Cargando rutina para: " + musculo + " Nivel: " + nivel);
+
+        // ¡Navegamos a la pantalla del ejercicio!
+        Router.navegar(event, "/views/Ejercicios.fxml", "Entrenamiento en Progreso");
     }
 }

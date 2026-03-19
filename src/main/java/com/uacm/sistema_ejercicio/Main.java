@@ -16,13 +16,13 @@ public class Main extends Application {
     @Override
     public void start(Stage primary) throws Exception {
         // Carga el archivo FXML desde la carpeta resources
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Ejercicios.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Login.fxml"));
         Parent root = loader.load();
 
         Scene escena = new Scene(root);
 
-        primary.setTitle("FitSystem - Iteración 1");
-        escena.getStylesheets().add(getClass().getResource("/styles/estilos").toExternalForm());
+        primary.setTitle("FitSystem - Iteracion 1");
+        escena.getStylesheets().add(getClass().getResource("/styles/estilos.css").toExternalForm());
         primary.setScene(escena);
         primary.show();
     }
