@@ -1,17 +1,13 @@
-/* --- Fondo Principal de la Aplicación --- */
-.root {
-    -fx-background-color: #A87865; /* El café base de tu paleta */
-}
-/* --- Lado Izquierdo (Café Fuerte) --- */
+
+/* --- Lado Izquierdo (Panel de Animación) --- */
 .panel-animacion {
-    -fx-background-color: #734024;
+    -fx-background-color: #2D3E40; /* El verde oscuro del menú lateral de tu compa */
 }
 
-/* --- Lado Derecho (Café Base) --- */
+/* --- Lado Derecho (Panel de Controles) --- */
 .panel-controles {
-    -fx-background-color: #A87865;
+    -fx-background-color: #387373; /* El verde Teal principal */
 }
-
 /* --- Textos --- */
 .texto-titulo {
     -fx-text-fill: white;
@@ -56,16 +52,18 @@
     -fx-background-radius: 5px;
 }
 
+/* --- La clase que te está dando lata --- */
 .boton-siguiente {
-    -fx-background-color: #247367; /* Verde Complementario */
+    /* Aquí tenías el hexadecimal del café, cámbialo por Teal */
+    -fx-background-color: #387373; /* El Teal de tu compañero */
     -fx-text-fill: white;
     -fx-font-size: 18px;
     -fx-font-weight: bold;
-    -fx-background-radius: 8px;
+    -fx-background-radius: 20px;
     -fx-cursor: hand;
 }
 .boton-siguiente:hover {
-    -fx-background-color: #319e8d;
+    -fx-background-color: #4a9191; /* Un Teal un poco más claro para el hover */
 }
 .boton-siguiente:disabled {
     -fx-background-color: #555555;
